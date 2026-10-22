@@ -26,6 +26,9 @@ jobs:
       with:
         gradle-version: 8.7
 
+    - name: Check files
+      run: ls -R
+
     - name: Build Debug APK
       run: gradle assembleDebug
 
